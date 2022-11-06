@@ -69,20 +69,24 @@ app.use('/', indexRouter);
 /* Smarthome Backend Routes */
 // app.use('/greenhouse', greenhouseRouter);
 // app.use('/smarthome', smarthomeRouter);
-app.use('/img/bc.gif', express.static('img/bc.gif'));
+
+/* Error page gif */
+app.use('/img/bc.gif', express.static(__dirname + '/img/bc.gif'));
+
 /* Locally available Node Modules */
 app.use('/css/main_style.css', express.static(__dirname + '/css/main_style.css'));
-app.use('/node_modules/bootstrap/dist/css/bootstrap.min.css', express.static(__dirname + '/node_modules/bootstrap/dist/css/bootstrap.min.css'));
-app.use('/node_modules/bootstrap/dist/css/bootstrap.min.css.map', express.static(__dirname + '/node_modules/bootstrap/dist/css/bootstrap.min.css.map'));
+// app.use('/node_modules/bootstrap/dist/css/bootstrap.min.css', express.static(__dirname + '/node_modules/bootstrap/dist/css/bootstrap.min.css'));
+// app.use('/node_modules/bootstrap/dist/css/bootstrap.min.css.map', express.static(__dirname + '/node_modules/bootstrap/dist/css/bootstrap.min.css.map'));
 // app.use('/node_modules/jquery/dist/jquery.min.js', express.static(__dirname + '/node_modules/jquery/dist/jquery.min.js'));
-app.use('/node_modules/angular/angular.min.js', express.static(__dirname + '/node_modules/angular/angular.min.js'));
-app.use('/node_modules/angular/angular.min.js.map', express.static(__dirname + '/node_modules/angular/angular.min.js.map'));
+// app.use('/node_modules/angular/angular.min.js', express.static(__dirname + '/node_modules/angular/angular.min.js'));
+// app.use('/node_modules/angular/angular.min.js.map', express.static(__dirname + '/node_modules/angular/angular.min.js.map'));
 // app.use('/node_modules/angular-route/angular-route.js', express.static(__dirname + '/node_modules/angular-route/angular-route.js'));
 // app.use('/node_modules/angular-animate/angular-animate.js', express.static(__dirname + '/node_modules/angular-animate/angular-animate.js'));
 // app.use('/node_modules/web3/dist/web3.min.js', express.static(__dirname + '/node_modules/web3/dist/web3.min.js'));
 
 /* Frontend Routes*/
 app.use('/public/index.html', express.static('public/index.html'));
+// app.use('/public', express.static('public'));
 app.use('/public', publicRouter);
 // app.use('/checkout', checkoutRouter);
 
