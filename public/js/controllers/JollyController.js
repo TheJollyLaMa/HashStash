@@ -2,7 +2,8 @@ app.controller('JollyController', ['$scope', function($scope) {
     $scope.title = "HashStash - Blockchain for the Rest of Us";
     $scope.HashStashNav = [
         {name: "Home", url: "#!/home"},
-        {name: "Contact", url: "#!/contact"}        
+        {name: "Contact", url: "#!/contact"},
+        {name: "Inventory", url: "#!/inventory"}
     ];
     $scope.data = {
         "name": "Jolly",
@@ -12,5 +13,12 @@ app.controller('JollyController', ['$scope', function($scope) {
         "age": Math.floor((new Date() - new Date(1985, 04, 21)) / 31557600000)
     };
 
-
+    $scope.showContactForm = false;
+    $scope.showInventoryForm = false;
+    $scope.toggleContactForm = function() {
+        $scope.showContactForm = !$scope.showContactForm;
+    }
+    $scope.toggleInventoryForm = function() {
+        $scope.showInventoryForm = !$scope.showInventoryForm;
+    }
 }]);
