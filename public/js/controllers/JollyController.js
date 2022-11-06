@@ -1,8 +1,8 @@
 app.controller('JollyController', ['$scope', function($scope) {
     $scope.title = "HashStash - Blockchain for the Rest of Us";
     $scope.HashStashNav = [
-        {name: "Home", url: "/home"},
-        {name: "Contact", url: "/contact"}        
+        {name: "Home", url: "#!/home"},
+        {name: "Contact", url: "#!/contact"}        
     ];
     $scope.data = {
         "name": "Jolly",

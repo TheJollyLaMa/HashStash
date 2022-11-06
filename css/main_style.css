@@ -12,7 +12,7 @@ main {
     height: 105%;
     /* margin: 30px 5px 30px 5px; */
     padding: 5px;
-  }
+}
 a.button {
     background-color: #4CAF50;
     border: none;
@@ -29,4 +29,6 @@ a.button {
 a.button:hover {
     background-color: #3e8e41;
 }
-
+.home h1 {
+    text-align: center;
+}
