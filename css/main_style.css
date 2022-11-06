@@ -13,6 +13,17 @@ main {
     /* margin: 30px 5px 30px 5px; */
     padding: 5px;
 }
+button {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(212, 173, 106);
+    color: white;
+    transition: background-color .5s, color .3s;
+}
 a.button {
     background-color: #4CAF50;
     border: none;
