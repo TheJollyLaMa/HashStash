@@ -1,0 +1,17 @@
+<header>
+    <div class="rari_link">
+        <a href="https://rarible.com/token/0xd07dc4262bcdbf85190c01c996b4c06a461d2430:225304?tab=owners" style="text-decoration:none;" target="blank">
+            <img src="../img/icons/Rarible_Logo.png" alt="Rarible">
+        </a>
+    </div>
+    <h4 id="title">{{title}}</h4>
+    <ul id="top" class="breadcrumb">
+        <img ng-click="sayHi()" class="jollyicon" ng-src="favicon.ico" >
+        <!-- a link in a list item for each item in navabr -->
+        <li ng-repeat="item in HashStashNav">
+            <a href="{{item.url}}">{{item.name}}</a>
+        </li>
+        <img ng-click="sayHi()" class="jollyicon" ng-src="favicon.ico" >
+    </ul>
+    
+</header>

@@ -73,3 +73,16 @@ Bind local data to blockchain orcale data to display the current inventory of th
 
 ## Display History
 Bind local data to blockchain orcale data to display the history of the household.
+
+
+
+
+
+
+
+
+
+
+significant specs:
+    Neo's backend error page
+    Jolly Header and Footer with customizable nav bar

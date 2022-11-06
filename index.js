@@ -71,10 +71,13 @@ app.use('/', indexRouter);
 // app.use('/smarthome', smarthomeRouter);
 
 /* Error page gif */
-app.use('/img/bc.gif', express.static(__dirname + '/img/bc.gif'));
+// app.use('/img/bc.gif', express.static(__dirname + '/img/bc.gif'));
+// app.use('/img/icons/Rarible_Logo.png', express.static(__dirname + '/img/icons/Rarible_Logo.png'));
+app.use('/img', express.static('img'));
 
 /* Locally available Node Modules */
 app.use('/css/main_style.css', express.static(__dirname + '/css/main_style.css'));
+app.use('/css/jolly_style.css', express.static(__dirname + '/css/jolly_style.css'));
 // app.use('/node_modules/bootstrap/dist/css/bootstrap.min.css', express.static(__dirname + '/node_modules/bootstrap/dist/css/bootstrap.min.css'));
 // app.use('/node_modules/bootstrap/dist/css/bootstrap.min.css.map', express.static(__dirname + '/node_modules/bootstrap/dist/css/bootstrap.min.css.map'));
 // app.use('/node_modules/jquery/dist/jquery.min.js', express.static(__dirname + '/node_modules/jquery/dist/jquery.min.js'));

@@ -5,12 +5,20 @@
         <title>HashStash</title>
         <!-- CSS -->
         <link rel="stylesheet" href="../css/main_style.css">
+        <link rel="stylesheet" href="../css/jolly_style.css">
     </head>
     <body ng-app="app">
-        <div>
+        <!-- header and navbar -->
+        <jolly-head navbar="HashStashNav" data="data"> </jolly-head>
+        
+        <!-- main view -->
+        <main>
             <ng-view></ng-view>
-        </div>
+        </main>
 
+
+        <!-- footer -->
+        <jolly-foot navbar="HashStashNav" data="data"></jolly-foot>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
@@ -18,5 +26,8 @@
 
     <script src="js/app.js"></script>
     <script src="js/controllers/MainController.js"></script>
+    <script src="js/controllers/JollyController.js"></script>
+    <script src="js/directives/jollyHead.js"></script>
+    <script src="js/directives/jollyFoot.js"></script>
     </body>
 </html>

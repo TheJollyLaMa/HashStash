@@ -3,9 +3,16 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: white;
-    margin: 2%; 
-    padding: 2%;
+
 }
+/* main body */
+main {
+    position: relative;
+    top: 55px;
+    height: 105%;
+    /* margin: 30px 5px 30px 5px; */
+    padding: 5px;
+  }
 a.button {
     background-color: #4CAF50;
     border: none;
@@ -22,3 +29,4 @@ a.button {
 a.button:hover {
     background-color: #3e8e41;
 }
+
