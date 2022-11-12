@@ -1,0 +1,45 @@
+<div class="content">
+    
+    <!-- <p>\[x = {-b \pm \sqrt{b^2-4ac} \over 2a} \]</p>
+
+    <p>
+        When 
+        <p> \[a \ne 0\] </p>,
+        there are two solutions to \(ax^2 + bx + c = 0\) and they are
+        \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+    </p> -->
+    \[rF = {1 \over 2*\pi*\sqrt{l*c}} \]
+    <form name="FreqForm" ng-submit="resonateFrequency(circuit.inductance, circuit.capacitance)" novalidate>
+        <input type="number" placeholder="inductance" name="inductance" ng-model="circuit.inductance" ng-required="true"/>
+        <div class="invalid_form" ng-show="circuit.inductance.$touched && circuit.inductance.$invalid">
+            <small>Enter a valid </small>
+        </div>
+
+        <input type="number" placeholder="capacitance" name="capacitance" ng-model="circuit.capacitance" ng-required="true"/>
+        <div class="invalid_form" ng-show="circuit.capacitance.$touched && circuit.capacitance.$invalid">
+            <small>Enter a valid</small>
+        </div>
+
+        <!-- <textarea placeholder="circuit condition, time running, repair logging, sale/transfer, etc..." name="message" ng-model="circuit.message" ng-required="true"></textarea>
+        <div class="invalid_form" ng-show="circuit.message.$touched && circuit.message.$invalid">
+            <small>Enter Valid</small>
+        </div> -->
+
+        <input type="submit" value="Send" ng-disabled="FreqForm.$invalid"/>
+    </form>
+<!-- display table -->
+    <div>
+        <table>
+            <tr>
+                <th>Inductance</th>
+                <th>Capacitance</th>
+                <th>Frequency</th>
+            </tr>
+            <tr ng-repeat="rF in resonateFrequencyTable">
+                <td>{{rF.inductance}}</td>
+                <td>{{rF.capacitance}}</td>
+                <td>{{rF.frequency}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

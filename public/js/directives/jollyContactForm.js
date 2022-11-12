@@ -3,7 +3,7 @@ app.directive('jollyContactForm', function() {
     return {
         restrict: 'E',
         scope: {},
-        controller: "JollyController",
+        controller: "ContactController",
         templateUrl: 'js/directives/jollyContactForm.html'
     };
     

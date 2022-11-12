@@ -1,9 +1,10 @@
-app.controller('InventoryController', ['$scope', function($scope) {
+app.controller('InventoryController', ['$scope', '$location', function($scope, $location) {
     $scope.title = 'Inventory Form';
 
-    // call to abi to add inventory block
-
-    // call to abi to add information to inventory block
-
+    // send inventory form
+    $scope.sendInventoryForm = function() {
+        $location.path('/success/inventoryForm_success');
+        console.log($scope.inventoryForm);
+    }
 
 }]);

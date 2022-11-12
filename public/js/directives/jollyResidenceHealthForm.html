@@ -1,0 +1,20 @@
+<div class="content">
+    <form name="ResidenceHealthForm" ng-submit="sendResidenceHealthForm()" novalidate>
+        <input type="text" placeholder="name" name="name" ng-model="residence.name" ng-required="true"/>
+        <div class="invalid_form" ng-show="residence.name.$touched && residence.name.$invalid">
+            <small>Enter a valid </small>
+        </div>
+
+        <input type="text" placeholder="age" name="age" ng-model="residence.age" ng-required="true"/>
+        <div class="invalid_form" ng-show="residence.age.$touched && residence.age.$invalid">
+            <small>Enter a valid</small>
+        </div>
+
+        <textarea placeholder="Personal health vitals: exercise routine, heart beat monitor, water and diet, etc..." name="message" ng-model="residence.message" ng-required="true"></textarea>
+        <div class="invalid_form" ng-show="residence.message.$touched && residence.message.$invalid">
+            <small>Enter Valid</small>
+        </div>
+
+        <input type="submit" value="Send" ng-disabled="ResidenceHealthForm.$invalid"/>
+    </form>
+</div>

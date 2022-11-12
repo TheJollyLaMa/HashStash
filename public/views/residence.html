@@ -5,6 +5,8 @@
         Household Vitals: Contact Relations, Household Inventory, Inhabitant Health, Residential Health<br>
         Treated as an n*f*t to be used for recall by Smarthome Oracle for future planning as well as by neighboring Smarthomes
     </p>
-    <button ng-click="toggleInventoryForm()">Add Residence Snapshot</button>
-    <jolly-inventory-form ng-show="showInventoryForm" > </jolly-inventory-form>
+    <button ng-click="toggleResidenceHealthForm()">Add Residence Inventory Snapshot</button>
+    <jolly-inventory-form ng-show="showResidenceHealthForm" > </jolly-inventory-form>
+    <button ng-click="toggleAssetForm()">Add Asset Status Snapshot</button>
+    <jolly-asset-form ng-show="showAssetForm" > </jolly-asset-form>
 </div>
